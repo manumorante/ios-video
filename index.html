@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta
       name="viewport"
-      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width"
-    />
+      content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" />
 
     <title>HTML canvas video player</title>
 
@@ -22,7 +21,7 @@
 
       <canvas class="canvas"></canvas>
 
-      <div id="over_video">Look at me</div>
+      <div class="over-video">Look at me</div>
     </div>
 
     <script src="canvas-video-player.js"></script>
@@ -32,8 +31,8 @@
 
       if (isIOS) {
         var canvasVideo = new CanvasVideoPlayer({
-          videoSelector: ".video",
-          canvasSelector: ".canvas",
+          videoSelector: '.video',
+          canvasSelector: '.canvas',
           timelineSelector: false,
           autoplay: true,
           makeLoop: true,
@@ -42,7 +41,7 @@
         })
       } else {
         // Use HTML5 video
-        document.querySelectorAll(".canvas")[0].style.display = "none"
+        document.querySelectorAll('.canvas')[0].style.display = 'none'
       }
     </script>
   </body>
